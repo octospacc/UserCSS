@@ -1,0 +1,64 @@
+/* ==UserStyle==
+@name           MastoPurple Light
+@namespace      github.com/octospacc/UserCSS
+@version        1.0.0
+@description    MastoPurple Light style for Mastodon
+@author         OctoSpacc
+@license        AGPL-3.0
+@advanced text url "Mastodon Instance URL" "mastodon.uno"
+==/UserStyle== */
+
+@-moz-document domain("/*[[url]]*/") {
+    Body, ::-webkit-scrollbar-track {
+        Background: #E0D0FF;
+    }
+    
+    a {
+        Color: #A050FF !important;
+    }
+    
+    .drawer__inner__mastodon, .dropdown-menu__separator {
+        Display: None;
+    }
+    
+    .column-header__back-button, .column-back-button {
+        Color: #E0D0FF !important;
+        Background: #402070;
+    }
+    
+    .drawer__header, .drawer__header a, .column-header, .column-header__button {
+        Color: #FFFFFF !important;
+        Background: #402070;
+    }
+    
+    .column-header.active .column-header__icon, .column-inline-form, .column>.scrollable, .error-column, .getting-started, .regeneration-indicator {
+        Color: #E0D0FF !important;
+    }
+    
+    .column-inline-form, .column>.scrollable, .error-column, .getting-started, .regeneration-indicator {
+        Color: #E0D0FF !important;
+        Border: 1px solid #E0D0FF;
+    }
+    
+    .notification__filter-bar > *, .account__section-headline button, .notification__filter-bar button, .search__input {
+        Color: #FFFFFF !important;
+        Background: #A080D0;
+    }
+    
+    .search__input::placeholder {
+        Color: #FFFFFF !important;
+    }
+    
+    ::-webkit-scrollbar-thumb, .compose-form__publish-button-wrapper > * {
+        Background: #402070 !important;
+    }
+    
+    .item-list, .drawer__inner, .drawer__inner__mastodon, .autosuggest-textarea__textarea, .compose-form__uploads-wrapper, .compose-form__buttons-wrapper, .getting-started *, .scrollable , .detailed-status, .detailed-status > *, .detailed-status__action-bar, .dropdown-menu__item a, .dropdown-menu__item button, .dropdown-menu {
+        Background: #F5F5FF !important;
+    }
+    
+    .search__input:focus, .autosuggest-textarea__textarea:focus {
+        Color: #000000 !important;
+        Background: #FFFFFF !important;
+    }
+}
