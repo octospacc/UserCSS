@@ -1,0 +1,44 @@
+/* ==UserStyle==
+@name           Invidiousest
+@namespace      gitlab.com/octospacc/UserCSS
+@version        1.0.0
+@description    General tweaks for Invidious
+@author         OctoSpacc
+@license        AGPL-3.0
+==/UserStyle== */
+
+body {
+    Overflow-X: Hidden;
+}
+
+body.dark-theme,
+body.dark-theme div.vjs-control-bar{
+    Background-Color: #000;
+}
+
+div.pure-g div.pure-u-1.pure-u-md-2-24 {
+    Width: 0;
+}
+
+@media screen and (min-width: 64em) {
+    div.pure-u-md-1-4, div.pure-u-md-6-24 {
+        Width: 20%;
+    }
+}
+
+.navbar > div:not(:last-child) {
+    Margin-Bottom: 0;
+}
+
+div.pure-g div#contents.pure-u-1.pure-u-md-20-24 {
+    Width: 100%;
+}
+
+div#player-container.h-box {
+    Padding-Bottom: 88vh !important;
+}
+
+div#player {
+    Position: Static;
+    Padding-Top: 0;
+}
